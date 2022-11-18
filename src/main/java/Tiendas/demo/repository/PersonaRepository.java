@@ -8,5 +8,9 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PersonaRepository extends CrudRepository<Persona,Long> {
+
+    public Object findAllById(long id);
+
+    public void delete(long id);
     
 }
