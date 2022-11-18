@@ -17,18 +17,23 @@ public class PersonaService implements IPersonaService {
     
     public List<Persona> getAllPersona(){
         
-        return null;
+        return (List<Persona>) personaRepository.findAll();
         
     }
     
     public Persona getPersonaById(long id){
         
-        return null;
+        return (Persona) personaRepository.findAllById(id);
         
     }
     
     public void savePersona(Persona persona){
         
+        personaRepository.save(persona);
+    }
+    
+    public void delete(long id){
+        personaRepository.deleteById(id);
     }
   
     }
