@@ -5,10 +5,15 @@
  */
 package Tiendas.demo.service;
 
+import Tiendas.demo.entity.Persona;
+import java.util.List;
+
 /**
  *
  * @author valer
  */
 public interface IPersonaService {
+
+    public List<Persona> getAllPersona();
     
 }
